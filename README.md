@@ -30,3 +30,8 @@ Spots is a website that allows users to upload, share, and interact with images.
 This website is deployed to GitHub Pages.
 
 - Deployment link: https://github.com/ketessos/se_project_spots
+
+## Video
+
+This is a short explanation of the project.
+- Video link: https://drive.google.com/file/d/1Vtzy-oen4DrCMaVVftRZkEQsoUkNMmeM/view?usp=sharing
