@@ -5,10 +5,11 @@
 }
 
 .profile__avatar{
+    object-fit: cover;
     height: 190px;
     width: 190px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .profile__column{
@@ -20,6 +21,7 @@
     margin: 0 0 12px;
     font-weight: 500;
     font-size: 32px;
+    color: #212121;
     line-height: 1;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -34,6 +36,7 @@
     margin: 0;
     font-weight: 500;
     size: 16px;
+    color: #212121;
     opacity: 70%;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -46,6 +49,7 @@
 
 .profile__edit-btn{
     background-color: #fcf5e5;
+    color: #212121;
     margin-top: auto;
     border: none;
     font-size: 18px;
@@ -79,7 +83,6 @@
 }
 
 .profile__add-btn:hover{
-    background-color: #212121;
     opacity: 80%;
     cursor: pointer;
 }
