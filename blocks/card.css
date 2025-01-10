@@ -28,7 +28,7 @@
 
 
 .card__like-button{
-    background-image: url(../images/likeicon.svg);
+    background-image: url(../images/Union.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,10 +64,7 @@
 .card__title {
     margin: 0;
     font-size: 16px;
-}
-
-.card__title--overflow{
-    max-width: 230px;
+    max-width: 250px;
 }
 
 .card__like-button{
