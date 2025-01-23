@@ -26,7 +26,7 @@
     box-sizing: border-box;
 }
 
-.moda__close-btn{
+.modal__close-btn{
     background-image: url(../images/group27.svg);
     border: none;
     background-color: transparent;
