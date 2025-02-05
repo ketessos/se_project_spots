@@ -32,49 +32,14 @@
             </section>
             <section class="cards page__section">
                 <ul class="cards__list">
-                <li class="card">
-                    <img src="./images/image1.svg" alt="Val Thorens" class="card__image"/>
-                    <div class="card__content">
-                        <h2 class="card__title">Val Thornes</h2>
-                        <button type="button" class="card__like-button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/image2.svg" alt="Restaurant terrace" class="card__image"/>
-                    <div class="card__content">
-                        <h2 class="card__title">Restaurant terrace</h2>
-                        <button type="button" class="card__like-button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/image3.svg" alt="An outdoor cafe" class="card__image"/>
-                    <div class="card__content">
-                        <h2 class="card__title">An outdoor cafe</h2>
-                        <button type="button" class="card__like-button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/image4.svg" alt="A very long bridge, over the forest..." class="card__image"/>
-                    <div class="card__content">
-                        <h2 class="card__title"> Very long bridge, over the forest </h2>
-                        <button type="button" class="card__like-button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/image5.svg" alt="Tunnel with morning light" class="card__image"/>
-                    <div class="card__content">
-                        <h2 class="card__title">Tunnel with morning light</h2>
-                        <button type="button" class="card__like-button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/image6.svg" alt="Mountain house" class="card__image"/>
-                    <div class="card__content">
-                        <h2 class="card__title">Mountain house</h2>
-                        <button type="button" class="card__like-button"></button>
-                    </div>
-                </li>
-            </ul>
+                    <template id="card-template">
+                    <li class="card">
+                        <img src="" alt="" class="card__image"/>
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <button type="button" class="card__like-button"></button>
+                        </div>
+                    </template>
         </section>
             </main>
         <footer class="footer">2025 &#169; Spots</footer>
@@ -83,13 +48,13 @@
                 <button type="submit" class="modal__close-btn"></button>
                 <h2 class="modal__title">Edit Profile</h2>
                 <form name="edit-profile" class="modal__form">
-                    <label for="name" class="modal__label">
+                    <label for="profile-name-imput" class="modal__label">
                         Name
-                        <input id="name" type="text" class="modal__input" placeholder="Name">
+                        <input id="profile-name-imput" type="text" class="modal__input" placeholder="Name">
                     </label>
-                    <label for="description" class="modal__label">
+                    <label for="profile-description-input" class="modal__label">
                         Description
-                        <input id="description" type="text" class="modal__input" placeholder="Description">
+                        <input id="profile-description-input" type="text" class="modal__input" placeholder="Description">
                     </label>
                     <button type="submit" class="modal__submit-btn">Save</button>
                 </form>
