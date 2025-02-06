@@ -20,8 +20,7 @@ const editModalDescriptionInput = editModal.querySelector("#profile-description-
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
-function getCardElement (data){
-    console.log(data);    
+function getCardElement (data){   
     const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);
     
     const cardNameEl = cardElement.querySelector(".card__title");
