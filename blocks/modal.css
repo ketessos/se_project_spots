@@ -60,9 +60,15 @@
 .modal__input{
     padding: 16px 12px;
     border-radius: 8px;
-    color: #212121;
+    border: 1px solid;
+    color: rgba(33, 33, 33, 0.4);
     font-size: 20px;
+    cursor: pointer;
     font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.modal__input:hover{
+    color: #212121;
 }
 
 .modal__submit-btn{
@@ -73,6 +79,7 @@
     background-color: #212121;
     color: #fcf5e5;
     font-weight: 500;
+    cursor: pointer;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     border-bottom: 0;
 
