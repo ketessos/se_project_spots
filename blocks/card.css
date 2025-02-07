@@ -1,74 +1,72 @@
-.card__image{
-    height: 413px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 12px;
+.card__image {
+  height: 413px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 12px;
 }
 
-.card__content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card__title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #212121;
-    text-align: left;
-    max-width: 320px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #212121;
+  text-align: left;
+  max-width: 320px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-
-.card__like-button{
-    background-image: url(../images/Union.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 20px;
-    border: 2px;
-    background-color: transparent;
-    opacity: 40%;
+.card__like-button {
+  background-image: url(../images/Union.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 20px;
+  border: 2px;
+  background-color: transparent;
+  opacity: 40%;
 }
 
-.card__like-button:hover{
-    opacity: 100%;
-    cursor: pointer;
+.card__like-button:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
-.card{
-        max-width: 288px;
-    }
+  .card {
+    max-width: 288px;
+  }
 
-.card__image{
+  .card__image {
     height: 288px;
     width: 288px;
-}
+  }
 
-.card__content{
+  .card__content {
     width: 288px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
 
-.card__title {
+  .card__title {
     margin: 0;
     font-size: 16px;
     max-width: 250px;
-}
+  }
 
-.card__like-button{
+  .card__like-button {
     height: 18px;
-}
-
+  }
 }
