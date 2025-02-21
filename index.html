@@ -85,6 +85,36 @@
           </form>
         </div>
       </div>
+
+      <div class="modal" id="add-card-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">New post</h2>
+          <form name="edit-profile" class="modal__form">
+            <label for="add-card-link-imput" class="modal__label">
+              Image link
+              <input
+                id="add-card-link-imput"
+                type="text"
+                class="modal__input"
+                name="link"
+                placeholder="Paste a link to the picture"
+              />
+            </label>
+            <label for="add-card-name-input" class="modal__label">
+              Caption
+              <input
+                id="add-card-name-input"
+                type="text"
+                class="modal__input"
+                name="name"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script defer src="./scripts/index.js"></script>
   </body>
