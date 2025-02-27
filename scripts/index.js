@@ -74,6 +74,9 @@ function handleAddCardSubmit (evt) {
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value};
   const cardEl = getCardElement(inputValues);
   cardList.prepend(cardEl);
+
+  evt.target.reset();
+
   closeModal(cardModal)
 }
 
@@ -88,23 +91,24 @@ function getCardElement(data) {
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
 
-cardLikeBtn.addEventListener("click", () => {
-cardLikeBtn.classList.toggle("card__like-button_liked");
-});
-
-cardImageEl.addEventListener("click", () => {
-  openModal(previewModal);
-  previewModalCaptionEl.textContent = data.name;
-  previewModalImageEl.src = data.link;
-  previewModalImageEl.alt = data.name;
+  cardLikeBtn.addEventListener("click", () => {
+    cardLikeBtn.classList.toggle("card__like-button_liked");
   });
+  
+  cardImageEl.addEventListener("click", () => {
+    openModal(previewModal);
 
-cardDeleteBtn.addEventListener("click", () => {
-  cardElement.remove();
+    previewModalCaptionEl.textContent = data.name;
+    previewModalImageEl.src = data.link;
+    previewModalImageEl.alt = data.name;
   });
-
+  
+  cardDeleteBtn.addEventListener("click", () => {
+    cardElement.remove();
+  });
+  
   return cardElement;
-}
+};
 
 editModalBtn.addEventListener("click", () => {
   nameInput.value = profileNameEl.textContent;
@@ -112,6 +116,7 @@ editModalBtn.addEventListener("click", () => {
   openModal(editModal);
 });
 
+const closeButtons = document.querySelectorAll(".modal__close-btn");
 
 editModalCloseBtn.addEventListener("click", () => closeModal(editModal));
 

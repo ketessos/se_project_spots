@@ -48,8 +48,9 @@
 }
 
 .card__like-button_liked{
- background-image: url(../images/liked-icon.jpg);
+ background-image: url(../images/redunion.svg);
  opacity: 1;
+ border: none;
 }
 
 .card__like-button_liked:hover{
