@@ -28,14 +28,19 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__container_type_preview{
   background: none;
   padding: 0;
   border-radius: 0;
+  flex-direction: column;
+  width: auto;
+  align-items: flex-start;
 }
-
 
 .modal__image{
   width: 100%;
@@ -44,12 +49,12 @@
   max-width: 80vw;
   max-height: 80vh;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   padding: 0;
   margin: 0;
+  position: relative;
   }
   
-
 .modal__caption{
   display: inline-block;
   background-color: #212121;
@@ -59,7 +64,6 @@
   font-size: 20px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
-
 
 .modal__close-btn {
 width: 40px;
@@ -120,7 +124,6 @@ cursor: pointer;
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
-
 .modal__input:hover {
   border-color: #212121;
 }
@@ -137,7 +140,6 @@ cursor: pointer;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   border: 0;
 }
-
 
 @media screen and (max-width: 627px) {
   .modal {
@@ -175,14 +177,14 @@ cursor: pointer;
   }
 
   .modal__close_type_preview { 
-    right: 5px;
+    right: 11px;
     top: -19.51px;
-    background-image: url(../images/previewclosemobile.svg);
-    color: rgba(255, 255, 255, 1);
     opacity: 1;
   }
 
   .modal__close_type_preview:hover {
-    background-color: rgba(33, 33, 33, 1); 
-    }
+    background-color: rgba(33, 33, 33, 0.3);
+    background-blend-mode: multiply; 
+    opacity: 0.6;
+}
 }
