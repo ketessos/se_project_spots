@@ -140,6 +140,7 @@ cursor: pointer;
   border: 0;
 }
 
+
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
@@ -160,7 +161,8 @@ cursor: pointer;
   }
 
   .modal__image{
-    width: auto;
+    max-width: none;
+    max-height: none;
   }
 
   .modal__title {
