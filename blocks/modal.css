@@ -127,6 +127,15 @@ cursor: pointer;
   border-color: #212121;
 }
 
+.modal__error{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 630px;
+  color: rgba(255, 0, 0, 0.7);
+
+}
+
 .modal__submit-btn {
   width: 156px;
   padding: 18px;
