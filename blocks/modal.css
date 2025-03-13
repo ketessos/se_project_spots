@@ -140,7 +140,6 @@ cursor: pointer;
   color: rgba(255, 0, 0, 0.7);
 }
 
-
 .modal__submit-btn {
   width: 156px;
   padding: 18px;
@@ -152,6 +151,10 @@ cursor: pointer;
   cursor: pointer;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   border: 0;
+}
+
+.modal__submit-btn-disabled{
+  background-color: rgba(33, 33, 33, 0.5)
 }
 
 
