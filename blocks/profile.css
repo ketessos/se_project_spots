@@ -56,6 +56,7 @@
   font-weight: 500;
   opacity: 70%;
   margin-right: auto;
+  outline: none;
 }
 
 .profile__edit-btn:hover {
@@ -79,6 +80,7 @@
   margin-top: auto;
   border-radius: 8px;
   border: none;
+  outline: none;
 }
 
 .profile__add-btn:hover {
