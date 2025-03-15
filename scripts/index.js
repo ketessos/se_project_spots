@@ -57,22 +57,21 @@ const cardTemplate = document.querySelector("#card-template");
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscapeKey);
 
-
-modal.addEventListener("click", (event) => {
+modal.addEventListener("mousedown", (event) => {
   if (event.target === modal) {
     closeModal(modal);
   }
 });
 
-document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
-document.removeEventListener("keydown", handleEscapeKey);
 
 function handleEscapeKey(event) {
   if (event.key === "Escape") {
@@ -141,13 +140,14 @@ editModalBtn.addEventListener("click", () => {
 
 const closeButtons = document.querySelectorAll(".modal__close-btn");
 
-editModalCloseBtn.addEventListener("click", () => closeModal(editModal));
+closeButtons.forEach((button) => {
 
-cardModalCloseBtn.addEventListener("click", () => closeModal(cardModal));
+  const popup = button.closest('.modal');
+
+  button.addEventListener('click', () => closeModal(popup));
+});
 
 cardModalBtn.addEventListener("click", () => openModal(cardModal));
-
-previewModalCloseBtn.addEventListener("click", () => closeModal(previewModal));
 
 editForm.addEventListener("submit", handleEditProfileSubmit);
 cardForm.addEventListener("submit", handleAddCardSubmit);
