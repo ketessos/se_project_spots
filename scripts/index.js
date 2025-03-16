@@ -58,13 +58,6 @@ const cardTemplate = document.querySelector("#card-template");
 function openModal(modal) {
   modal.classList.add("modal_opened");
   document.addEventListener("keydown", handleEscapeKey);
-
-modal.addEventListener("mousedown", (event) => {
-  if (event.target === modal) {
-    closeModal(modal);
-  }
-});
-
 }
 
 function closeModal(modal) {
@@ -81,6 +74,16 @@ function handleEscapeKey(event) {
     }
   }
 }
+
+const modals = document.querySelectorAll(".modal");
+
+modals.forEach((modal) => {
+  modal.addEventListener("mousedown", (event) => {
+    if (event.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
 
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
